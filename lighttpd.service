@@ -1,0 +1,13 @@
+## Startup Script for Lighttpd
+[Unit]
+Description=Lightning Fast Webserver With Light System Requirements
+After=syslog.target network-online.target
+
+[Service]
+PIDFile=/var/run/lighttpd.pid
+EnvironmentFile=-/etc/sysconfig/lighttpd
+ExecStart=/usr/local/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf
+
+[Install]
+WantedBy=multi-user.target
+EOF
