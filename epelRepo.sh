@@ -15,8 +15,8 @@ dnf module enable php:remi-7.4 -y
 sleep 5
 
 echo "Install PHP and the Extensions"
-echo "dnf install php php-cli php-common php-json php-xml php-mbstring php-mysqli php-zip php-intl"
-dnf install php php-cli php-common php-json php-xml php-mbstring php-mysqli php-zip php-intl
+echo "dnf install php php-cli php-common php-json php-xml php-mbstring php-mysqli php-zip php-intl -y"
+dnf install php php-cli php-common php-json php-xml php-mbstring php-mysqli php-zip php-intl -y
 
 echo "Install Lighttpd From Source"
 echo "dnf install -y autoconf make automake libtool pcre-devel  zlib-devel bzip2-devel git"
