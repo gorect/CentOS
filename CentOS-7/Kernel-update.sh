@@ -36,7 +36,7 @@ echo "Kernel-lt = LTS"
   #Installs the lastestLTS kernel
 echo "sudo yum --enablerepo=elrepo-kernel install kernel-lt"
 sudo yum --enablerepo=elrepo-kernel install kernel-lt
-y
+
 echo "Ready to edit /etc/default/grub"
 echo "To change the default Kernel at boot"
 echo "change GRUB_DEFAULT=X to GRUB_DEFAULT=0"
