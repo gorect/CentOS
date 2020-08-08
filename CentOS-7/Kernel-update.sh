@@ -2,7 +2,7 @@
 
 #To check current kernel version on CentOS, run the following command:
 echo "uname –msr"
-uname –msr
+uname -msr
       #Thi will output somthing like "Linux 3.10.0-862...etc"
 
 ##Note:
